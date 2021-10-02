@@ -71,6 +71,20 @@
 						<input type="text" class="form-control" name="@key-cloudFrontDomainName" placeholder="r4g77gsejasxig.cloudfront.net" autocomplete="off">
 						<small class="form-text text-muted">The CloudFront domain name associated with the S3 bucket above.</small> </div>
 					<!-- END -->
+					<!-- IF storageProviderHelper(@key, "firebase") -->
+					<div class="form-group"> <label>Firebase Configs path</label>
+						<input type="text" class="form-control" name="@key-firebase_configs" placeholder="firebase configs" required="required">
+						<small class="form-text text-muted">Firebase configs path</small> </div>
+					<div class="form-group"> <label>Bucket Name</label>
+						<input type="text" class="form-control" name="@key-gcp_bucket" placeholder="bucket name" required="required">
+						<small class="form-text text-muted">GCP Bucket name</small> </div>
+					<div class="form-group"> <label>Forum Data Directory</label>
+						<input type="text" class="form-control" name="@key-gcp_directory" placeholder="forum" required="required">
+						<small class="form-text text-muted">GCP Directory</small> </div>
+					<div class="form-group"> <label>Url Prefix</label>
+						<input type="text" class="form-control" name="@key-gcp_url_prefix" placeholder="forum" required="required">
+						<small class="form-text text-muted">URL Prefix</small> </div>
+					<!-- END -->
 					<!-- IF storageProviderHelper(@key, "imgur") -->
 						Imgur support may be added in the future.  Feel free to contribute to <a href="https://github.com/june07/nodebb-plugin-cloudstorage">the project on GitHub</a>
 					<!-- END -->
