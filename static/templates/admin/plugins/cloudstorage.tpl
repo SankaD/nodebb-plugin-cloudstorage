@@ -74,6 +74,13 @@
 					<!-- IF storageProviderHelper(@key, "imgur") -->
 						Imgur support may be added in the future.  Feel free to contribute to <a href="https://github.com/june07/nodebb-plugin-cloudstorage">the project on GitHub</a>
 					<!-- END -->
+					<!-- IF storageProviderHelper(@key, "firebase") -->
+					<div class="form-group">
+						<label>Firebase config file path</label>
+						<input type="text" class="form-control" name="@key-firebase-file" placeholder="Enter path to firebase config file" required="required">
+						<small class="form-text text-muted">Firebase config file path</small>
+					</div>
+					<!-- END -->
                 </div>
               </p>
             </div>
